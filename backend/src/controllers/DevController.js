@@ -22,11 +22,11 @@ module.exports = {
   },
 
   async index (req, res) {
-    const { userId } = req.headers;
-    const loggedDev = await Dev.findById(userId);
+    const { user } = req.headers;
+    const loggedDev = await Dev.findById(user);
     const users = await Dev.find({
       $and: [
-        { _id: { $ne: userId } },             // bring me all user where id is not this one
+        { _id: { $ne: user } },               // bring me all user where id is not this one
         { _id: { $nin: loggedDev.likes }},    // bring me all users which id are not inside a list - prevents from showing already likes
         { _id: { $nin: loggedDev.dislikes }}  // bring me all users which id are not inside a list - prevents from showing already dislikes
       ]
