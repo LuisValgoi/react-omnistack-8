@@ -13,7 +13,15 @@ const DevSchema = new Schema({
   avatar: {
     type: String,
     required: true
-  }
+  },
+  likes: [{
+    type: Schema.Types.ObjectId, // FK TO DEV TABLE
+    ref: "Dev"
+  }],
+  dislikes: [{
+    type: Schema.Types.ObjectId, // FK TO DEV TABLE
+    ref: "Dev"
+  }]
 }, {
   timestamps: true // creaetedAt, updatedAt
 });
