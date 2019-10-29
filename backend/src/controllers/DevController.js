@@ -2,7 +2,7 @@ const axios = require("axios");
 const Dev = require("../models/Dev");
 
 module.exports = {
-  async store(req, res) {
+  async store (req, res) {
     const { username } = req.body;
     const userExists = await Dev.findOne({ user: username });
     if (userExists) {
@@ -21,7 +21,11 @@ module.exports = {
     return res.json(dev)
   },
 
-  async index (req, res) {
+  async getAll (req, res) {
+    return res.json(await Dev.find());
+  },
+
+  async getAllAvailable (req, res) {
     const { user } = req.headers;
     const loggedDev = await Dev.findById(user);
     const users = await Dev.find({
