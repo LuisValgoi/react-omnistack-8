@@ -13,3 +13,15 @@ https://rocketseat.com.br/week-8/aulas
 - `yarn add axios`: Used to manage HTTP requests and turn my life eaiser.
 - `yarn add cors:` Library which exposes app in reactjs being accessible by the frontend.
 - `MongoDB Compass`: Like DBeaver but for MongoDB. SGBD.
+
+
+# Frontend
+**Declarative mode is: ON!!**
+
+Declarative: 
+- Say to machine which are the states.
+- > It will show when this case is true and this other is false
+
+Imperative: 
+- Give details about everything that it needs to produce a result.
+- > Search for a div and put into <body>
