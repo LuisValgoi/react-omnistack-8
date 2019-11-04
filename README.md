@@ -28,3 +28,5 @@ Imperative:
 
 ### Dependencies
 - `yarn add react-router-dom`: Used to manage routes and URLs inside browser.
+- `yarn add axios`: Used to manage HTTP requests and turn my life eaiser.
+
