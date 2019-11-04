@@ -25,3 +25,6 @@ Declarative:
 Imperative: 
 - Give details about everything that it needs to produce a result.
 - > Search for a div and put into <body>
+
+### Dependencies
+- `yarn add react-router-dom`: Used to manage routes and URLs inside browser.
