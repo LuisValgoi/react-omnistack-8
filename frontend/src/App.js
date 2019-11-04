@@ -1,10 +1,8 @@
 import React from 'react';
-import logo from "./assets/logo.svg";
+import Login from './pages/Login';
 
 function App() {
-  return (
-    <img src={logo} alt="tindev" />
-  );
+  return <Login/>
 }
 
 export default App;
