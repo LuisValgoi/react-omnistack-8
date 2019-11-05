@@ -77,3 +77,10 @@ need when the description is too big, then, the whitespace between description a
   transform: translateY(-5px);
   transition: all 0.2s;
 }
+
+.main-container .empty {
+  font-size: 32px;
+  color: #999;
+  font-weight: bold;
+  margin-top: 300px;
+}
